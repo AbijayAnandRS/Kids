@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+
+    <include layout="@layout/toolbar_product_page"/>
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/ll1"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/gray_categories_rect">
+
+
+        <com.example.kids.customfonts.MyTextView_Roboto_Bold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CATEGORY"
+            android:layout_gravity="center"
+            android:layout_marginRight="50dp"
+            android:id="@+id/text"
+            android:textColor="#212224"
+            android:textSize="13sp"/>
+
+        <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="10dp"
+            >
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/b4" />
+
+
+        </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+
+    </FrameLayout>
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:orientation="horizontal"
+        android:id="@+id/ll2"
+        android:layout_marginTop="40px"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/gray_categories_rect">
+
+
+        <com.example.kids.customfonts.MyTextView_Roboto_Bold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CATEGORY"
+            android:layout_gravity="center"
+            android:layout_marginRight="50dp"
+            android:id="@+id/text2"
+            android:textColor="#212224"
+            android:textSize="13sp"/>
+
+        <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="10dp"
+            >
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/b4" />
+
+
+        </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

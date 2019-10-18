@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:layout_width="match_parent"
+                        android:layout_height="500dp"
+                        android:id="@+id/v1">
+
+                    </androidx.viewpager.widget.ViewPager>
+
+                    <me.relex.circleindicator.CircleIndicator
+                        android:id="@+id/indicator"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_below="@+id/view"
+                        app:ci_drawable="@drawable/circledot"
+                        app:ci_drawable_unselected="@drawable/circledot"
+                        app:ci_height="8dp"
+                        app:ci_width="8dp"
+                        android:layout_gravity="bottom"
+                        android:backgroundTint="@android:color/white"/>
+
+
+
+                    <include layout="@layout/toolbar_product_page"/>
+
+
+
+                </FrameLayout>
+
+                <com.example.kids.customfonts.MyTextView_Roboto_Medium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#212224"
+                    android:textSize="15.4dp"
+                    android:layout_marginLeft="19.21dp"
+                    android:layout_marginTop="19.2dp"
+                    android:layout_marginBottom="8.9dp"
+                    android:text="AX Paris Short Sleeve"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="19.2dp">
+
+
+                    <com.example.kids.customfonts.TextView_Helvetica_Neue_bold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#0070d6"
+                        android:textSize="13.4dp"
+                        android:text="$ 25.99"/>
+                    <com.example.kids.customfonts.MyTextView_Roboto_Regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#212224"
+                        android:textSize="13.4dp"
+                        android:layout_marginLeft="9.6dp"
+                        android:text="fdghfhf"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.google.android.material.tabs.TabLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tabMode="fixed"
+                        app:tabGravity="fill"
+                        app:tabTextColor="#999999"
+                        app:tabSelectedTextColor="#212224"
+                        android:background="#ffffff"
+                        app:tabIndicatorColor="#0070d6"
+                        app:tabTextAppearance="@style/MyMenuTextAppearance1"
+                        android:id="@+id/tablayout1"/>
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:id="@+id/viewpager1"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="right"
+        android:paddingBottom="28.79dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="19.2dp"
+        android:elevation="15dp">
+        <com.example.kids.customfonts.Button_Roboto_Medium
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:background="@drawable/productpage_rect"
+            android:text="ADD TO BAG"
+            android:textColor="#ffffff" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

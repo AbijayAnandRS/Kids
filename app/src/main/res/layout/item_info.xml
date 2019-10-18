@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <com.example.kids.customfonts.MyTextView_Roboto_Bold
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10.6dp"
+        android:textColor="#212224"
+        android:text="MATERIALS"
+        android:layout_margin="19.2dp"/>
+
+    <com.example.kids.customfonts.MyTextView_Roboto_Regular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10.6dp"
+        android:textColor="#999999"
+        android:layout_marginLeft="19.2dp"
+        android:lineSpacingExtra="6dp"
+        android:letterSpacing="0.0625"
+        android:text="xvxbxbxcbvb"/>
+
+    <com.example.kids.customfonts.MyTextView_Roboto_Bold
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10.6dp"
+        android:textColor="#212224"
+        android:text="WASH INSTRUCTION"
+        android:layout_margin="19.2dp"/>
+
+    <com.example.kids.customfonts.MyTextView_Roboto_Regular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10.6dp"
+        android:textColor="#999999"
+        android:layout_marginLeft="19.2dp"
+        android:lineSpacingExtra="5dp"
+        android:letterSpacing="0.0625"
+        android:text="zdczcfd"/>
+
+</LinearLayout>
